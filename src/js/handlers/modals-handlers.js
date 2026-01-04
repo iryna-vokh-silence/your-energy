@@ -28,13 +28,13 @@ function updateButtonsBlock(id) {
   const isInFavorites = isFavorite(id);
 
   const favBtn = isInFavorites
-    ? `<button id="remove-from-favorites" class="btn btn-primary">
+    ? `<button name="remove-fav" id="remove-from-favorites" class="btn btn-primary">
          Remove favorite
          <svg class="exercise-modal-btn-icon">
            <use href="${iconsPath}#trash"></use>
          </svg>
        </button>`
-    : `<button id="add-to-favorites" class="btn btn-primary">
+    : `<button name="add-fav" id="add-to-favorites" class="btn btn-primary">
          Add to favorites
          <svg class="exercise-modal-btn-icon">
            <use href="${iconsPath}#icon-heart"></use>

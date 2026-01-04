@@ -3,7 +3,7 @@ import iconsPath from '../../img/sprite.svg';
 function renderGiveRatingModal(id) {
   return `<div class="rating-container">
     <form data-id=${id} class="rating-modal-form">
-      <button class="close-modal-btn" type="button">
+      <button name="close" class="close-modal-btn" type="button">
         <svg class="close-modal-icon">
           <use href="${iconsPath}#icon-close"></use>
         </svg>
@@ -54,7 +54,7 @@ function renderGiveRatingModal(id) {
         rows="4"
         placeholder="Your comment"
       ></textarea>
-      <button class="btn primary-btn" type="submit">
+      <button name="submit_rating" class="btn primary-btn" type="submit">
         Send
     </form>
   </div>`;

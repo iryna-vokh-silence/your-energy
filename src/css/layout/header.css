@@ -13,6 +13,14 @@
   align-items: center;
 }
 
+.nav .menu-items {
+  display: none;
+}
+
+.nav .socials {
+  display: none;
+}
+
 .nav .menu-btn {
   height: 32px;
 }

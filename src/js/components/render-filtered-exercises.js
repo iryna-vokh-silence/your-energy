@@ -40,7 +40,7 @@ export const renderFilteredExercises = exercises => {
     <use href="${iconsConfig.star.path}"></use>
   </svg>
 </span>
-  <button class="start-btn">Start
+  <button name="start" class="start-btn">Start
               <span class='start-exercise-icon'>
               <svg class="${iconsConfig.arrow.svgClass}" fill="${iconsConfig.arrow.fill}" width="16" height="16">
               <use href="${iconsConfig.arrow.path}"></use>

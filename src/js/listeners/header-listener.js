@@ -1,7 +1,3 @@
-import { gsap } from 'gsap';
-import { Observer } from 'gsap/Observer';
-gsap.registerPlugin(Observer);
-
 const headerInit = () => {
   const navItems = document.querySelectorAll('.menu-item');
   let activeNavItemIndex = Number(sessionStorage.getItem('activeNavItemIndex'));

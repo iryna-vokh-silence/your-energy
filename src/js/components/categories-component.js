@@ -54,7 +54,7 @@ function generatePageNumbers(currentPage, totalPages) {
       if (page === '...') {
         return '<span class="pagination__dots">...</span>';
       }
-      return `<button class="pagination__page ${page === currentPage ? 'active' : ''}" data-page="${page}">${page}</button>`;
+      return `<button name="page_${page}" class="pagination__page ${page === currentPage ? 'active' : ''}" data-page="${page}">${page}</button>`;
     })
     .join('');
 }
