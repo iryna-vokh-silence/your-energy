@@ -145,7 +145,6 @@ button {
 }
 .quote__daily-icon {
   width: 20px;
-  justify-self: 20px;
 }
 .quote__daily-icon:not(:last-child) {
   margin-bottom: 15px;
