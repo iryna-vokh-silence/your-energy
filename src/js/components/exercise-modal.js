@@ -26,7 +26,7 @@ function renderExerciseModal({
   const isInFavorites = isFavorite(_id);
 
   return `<div data-id=${_id} class="exercise-modal-card">
-            <button name="close_modal" class="close-modal-btn">
+            <button aria-label"Close modal" class="close-modal-btn">
               <svg class="close-modal-icon">
                 <use href="${iconsPath}#icon-close"></use>
               </svg>
@@ -72,20 +72,20 @@ function renderExerciseModal({
               <div class="exercise-modal-buttons-block">
               ${
                 isInFavorites
-                  ? `<button name="remove-fav" id="remove-from-favorites" class="btn btn-primary">
+                  ? `<button aria-label"Remove favorite" id="remove-from-favorites" class="btn btn-primary">
                       Remove favorite
                       <svg class="exercise-modal-btn-icon">
                         <use href="${iconsPath}#trash"></use>
                       </svg>
                     </button>`
-                  : `<button name="add-fav" id="add-to-favorites" class="btn btn-primary">
+                  : `<button aria-label"Add favorite" id="add-to-favorites" class="btn btn-primary">
                       Add to favorites
                       <svg class="exercise-modal-btn-icon">
                         <use href="${iconsPath}#icon-heart"></use>
                       </svg>
                     </button>`
               }
-                <button name="rate" id="give-rating" class="btn btn-secondary">Give a rating</button>
+                <button aria-label"Rate" id="give-rating" class="btn btn-secondary">Give a rating</button>
               </div>
             </div>
           </div>
